@@ -6,10 +6,10 @@ api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
     raise ValueError("API key not found! Make sure it's set in the .env file.")
 
-agent = Agent(name="My AI Assistant", job_title="AI Analyst", debug=True)# Agent initialize  and debugging
+agent = Agent(name="My AI Assistant", job_title="Ai Chatbot", debug=True)# Agent initialize  and debugging
 
 
-task = Task("Analyze sentiment", input="I love this product!")# Sentiment Analysis Task
+task = Task("chatbot", input="explain yourself")# Sentiment Analysis Task
 
 # Task execute
 result = agent.do(task)
